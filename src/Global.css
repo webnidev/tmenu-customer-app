@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mdc-theme-primary: #000 !important;
+}
+
+header.TmenuHeader img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.MasterContainer {
+  display: block;
+  margin: 0 auto;
+  /*background: #f1f1f1;*/
+}
+
+.mdc-tab-scroller__scroll-content button {
+  text-transform: capitalize;
+}
+
+.BarBottomHeader {
+  background: black;
+  display: flex;
+  align-items: center;
+  color: white !important;
+  text-align: center;
+  justify-content: space-around;
+  padding: 1% 0;
+}
+.BarBottomHeader button {
+  font-size: 0.9em;
+  text-transform: inherit;
+}
+
+.BarBottomHeader span.mdc-typography--body2 {
+    color: #ccc;
+    font-size: 0.8em;
+}
+
+span.mdc-typography--body2 span strong {
+  font-size: 1.1em;
+}
+
+.mdc-tab-scroller {
+  box-shadow: 1px 1px 5px #0000001f;
+}
+
+.mdc-tab-indicator .mdc-tab-indicator__content--underline {
+  border-color: #000 !important;
+}
+
+.BarBottomHeader button {
+  color: white !important;
+}
+.mdc-tab--active .mdc-tab__text-label {
+  color: #000 !important;
+}
+
+.MainMenu {
+  position: fixed;
+  bottom: 0;
+  display: block;
+  background: #000;
+}
+
+.MainMenu span.mdc-tab__text-label, .MainMenu i {
+  color: white !important;
+}
+
+.MainMenu .mdc-tab-scroller__scroll-area {
+  overflow-x: hidden !important;
+}
+
+.MainMenu .rmwc-badge--align-end {
+    right: -10%;
+    top: 20% !important;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.MainMenu .mdc-tab:not(.mdc-tab--active) .mdc-tab__text-label {
+  opacity: 1;
+}
+
+.MainMenu button.mdc-ripple-upgraded.mdc-tab.mdc-tab--stacked.mdc-tab--active {
+  background: #6b6b6b38;
+}
