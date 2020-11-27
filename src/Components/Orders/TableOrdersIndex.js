@@ -1,6 +1,6 @@
 import React from 'react';
 
-function OrdersIndex() {
+function TableOrdersIndex() {
     return (
       <>
         <h1>Histórico de Pedidos</h1>
@@ -8,4 +8,4 @@ function OrdersIndex() {
     );
   }
   
-  export default OrdersIndex;
+  export default TableOrdersIndex;

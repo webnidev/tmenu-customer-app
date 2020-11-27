@@ -1,6 +1,6 @@
 import React from 'react';
 
-function RecoveryPass() {
+function PassRecovery() {
     return (
       <>
         <h1>Recuperação de Senha</h1>
@@ -8,4 +8,4 @@ function RecoveryPass() {
     );
   }
   
-  export default RecoveryPass;
+  export default PassRecovery;
