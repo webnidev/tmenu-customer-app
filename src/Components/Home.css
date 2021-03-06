@@ -1,0 +1,10 @@
+.rmwc-collapsible-list {
+    margin-bottom: 4px;
+    color: #5a5a5a;
+    border-bottom: 1px solid #ececec;
+}
+
+ul.mdc-list {
+    margin-top: -2px;
+    padding-bottom: 21%;
+}

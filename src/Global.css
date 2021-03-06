@@ -1,17 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
   margin: 0;
   padding: 0;
+}
+
+p, h3, h4, h5, h6, span, button, div, .mdc-drawer .mdc-drawer__title, li.mdc-ripple-upgraded.mdc-list-item {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.tmenuGreen {
+  color: #08AA3E !important;
+}
+
+.tmenuGreenBg {
+  background: #08AA3E !important;
+}
+
+.tmenuRed {
+  color: #e20413 !important;
+}
+
+.tmenuRedBg {
+  background: #e20413 !important;
+}
+
+aside.mdc-drawer--open.mdc-drawer.mdc-drawer--modal i {
+  margin-right: 5%;
+}
+
+.mdc-tab-scroller__scroll-content a {
+  text-transform: capitalize;
+}
+
+aside.mdc-drawer--open.mdc-drawer.mdc-drawer--modal {
+  top: 0;
+  background: #171717 !important;
+  height: 88.68%;
+}
+
+.btnToBottom button {
+  width: 100%;
+  min-height: 60px;
+  text-transform: initial;
+  display: block;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.mdc-drawer {
+  border-right-width: 0px !important;
+}
+
+aside.mdc-drawer--open.mdc-drawer.mdc-drawer--modal div {
+  color: white;
+}
+
+.btnToBottom {
+  margin-bottom: 1px;
+}
+
+body .mdc-drawer .mdc-list-item:not(.mdc-list-item--activated) {
+  color: white !important;
+}
+
+.mdc-drawer .mdc-drawer__title {
+  font-weight: 900;
+  font-size: 1.4em;
+}
+
+.qtyControl .addProductModal {
+  text-transform: unset !important;
+  background: white !important;
+  color: #e20413 !important;
+}
+
+.qtyControl {
+  display: flex;
+  align-items: center;
+}
+
+.productImage img {
+    display: flex;
+    border-radius: 12px;
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.produtctDetailsModal {
+    padding: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.produtctDetailsModal p.productDescription {
+  margin-bottom: 10%;
+}
+
+.productImageModal img {
+    max-height: 230px;
+    width: 100%;
+}
+
+.productImage {
+  align-self: center;
+  margin-right: 6%;
+}
+
+.containerProductCatList h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.produtctDetailsModal button {
+  float: right;
+  background: #e20413 !important;
+  color: white !important;
+  text-transform: capitalize;
+  padding: 7%;
+}
+
+p.productDescription {
+  font-style: italic;
+  line-height: 18px;
+}
+
+.containerProductCatList li {
+  margin-bottom: 7%;
+  border: 1px solid #eaeaea;
+  margin-top: 5%;
+  padding: 3%;
+  border-radius: 12px;
+}
+
+.produtctDetails button {
+  float: right;
+  display: flex;
+  margin-top: 0%;
+  text-align: center;
+  color: #E20413;
+  justify-content: center;
+  font-size: 1.6em !important;
+  margin-bottom: -5%;
+}
+
+.containerProductCatList h2 {
+  color: black;
+  font-size: 1em;
+}
+
+.containerProductCatList p {
+  color:#5a5a5a;
+  font-size: 0.9em;
+}
+
+.produtctDetails {
+    min-width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.containerProductCatList ul li {
+  display: flex;
+}
+
+.containerProductCatList {
+  margin: 3%;
+}
+
+p.productPrice {
+    max-width: 30%;
+    display: contents;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+span.mdc-typography--body2 img {
+  width: 70px !important;
+  height: auto !important;
+}
+
+.TabCats button.mdc-ripple-upgraded.mdc-tab.mdc-tab--active{
+  font-weight: bold;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.MasterContainer, header.TmenuHeader img {
+  max-width: 650px;
 }
 
 :root {
   --mdc-theme-primary: #000 !important;
 }
 
+nav.MainMenu.mdc-tab-bar {
+  max-width: 650px;
+}
+
+input.mdc-text-field__input::placeholder {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.ModalBuscaHeader .mdc-dialog__actions {
+  display: none;
+}
+
+.ModalBuscaHeader button.mdc-ripple-upgraded.mdc-button.mdc-button--unelevated {
+  width: 100%;
+  margin-top: 5%;
+}
+
 header.TmenuHeader img {
   max-width: 100%;
   margin: 0 auto;
   display: block;
+  height: auto;
+    width: 100%;
 }
+
 .MasterContainer {
   display: block;
   margin: 0 auto;
@@ -28,11 +252,11 @@ header.TmenuHeader img {
   align-items: center;
   color: white !important;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 4% 8%;
 }
 .BarBottomHeader button {
   font-size: 0.9em;
-  text-transform: inherit;
 }
 
 .BarBottomHeader span.mdc-typography--body2 {
@@ -49,14 +273,15 @@ span.mdc-typography--body2 span strong {
 }
 
 .mdc-tab-indicator .mdc-tab-indicator__content--underline {
-  border-color: #000 !important;
+  border-color: #EC4A52 !important;
 }
 
 .BarBottomHeader button {
   color: white !important;
+  text-transform: capitalize !important;
 }
 .mdc-tab--active .mdc-tab__text-label {
-  color: #000 !important;
+  color: #EC4A52 !important;
 }
 
 .MainMenu {
